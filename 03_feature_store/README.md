@@ -5,7 +5,7 @@ A `feature store` guarda:
 - Origem;
 - Versão;
 - Atualização
-É um catalogo de feature. Ela ajuda a criar um padrão nas features por exemplo: A feature `avg_transaction_30d` pode ter varios times que a criam de forma diferente, em um `feature store` todos utilizaram a feature no mesmo conceito.
+É um catalogo de feature. Ela ajuda a criar um padrão nas features por exemplo: A feature `avg_transaction_30d` pode ter varios times que a criam de forma diferente, em um `feature store` todos utilizaram a feature no mesmo conceito. Ele não faz o **ETL** ele garante queo treino e o deploy leem o mesmo conceito já calculado
 
 ## Qual a diferença entre Feature e uma Tabela (Com todas as Features)
 Quando você cruza suas tabelas de features e as cria, a tabela final não sabe como as features foram criadas, quando foi criada, se houve algum tipo de mudança. Usando `Feature Store` nos temos um rastreio bem detalhado de cada feature:
@@ -55,7 +55,7 @@ Nos mostra:
 - TTL (Time to Live): o tempo que podemos usar antes "ttl=timedelta(days=3650)" se o ultimo registro for antes disso não usamos.
 
 ## Entity
-São as chaves de identificação de cada feature
+A `entity` identifica o sujeito/objeto ao qual a feature pertence (o cliente, o processo, a transação, etc).
 
 ## Comandos
 Após preencher os arquivos `feature_store.yaml` e `features.py`, rode o comando:

@@ -1,0 +1,23 @@
+artifact_path: file:///M:/disco M/Programacao/PythonProjects/Repos/MachineLearningEngineering/05_experiment_tracking/mlruns/1/models/m-53fc890fe04c4e1ca29a8899395bd65b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+mlflow_version: 3.14.0
+model_id: m-53fc890fe04c4e1ca29a8899395bd65b
+model_size_bytes: 1589719
+model_uuid: m-53fc890fe04c4e1ca29a8899395bd65b
+prompts: null
+run_id: c53e315595384cc1a120de7f1daf7f94
+utc_time_created: '2026-07-22 05:00:10.006217'
